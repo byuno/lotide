@@ -16,5 +16,4 @@ const assertArrayEqual = function (array1, array2) {
   return true;
 };
 
-assertArrayEqual([1, 2, 3], [1, 2, "z"]);
 
