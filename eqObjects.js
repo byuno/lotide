@@ -42,7 +42,7 @@ const eqObjects = function (object1, object2) {
   console.log('Output of object2[keys]', Array.isArray(object2[keys]));
 
   if (Array.isArray(object1[keys]) === true && Array.isArray(object2[keys]) === true) {
-    console.log(eqArrays(object1[keys], object2[keys]));
+    return eqArrays(object1[keys], object2[keys]);
   } else {
     (object1[keys] === object2[keys])
       numMatchingValues += 1;
@@ -52,13 +52,14 @@ const eqObjects = function (object1, object2) {
 if (numMatchingValues === inputObjectKeys1.length) {
   return true;
 }
+//this ultimately determines the expcted value in assertEqual
 return false;
 };
 
 
 //console.log(eqObjects(ab, ba)); // true
 
-/*const ab = { a: "1", b: "2" };
+const ab = { a: "1", b: "2" };
 const ba = { b: "2", a: "1" };
 assertEqual(eqObjects(ab, ba), true); // => true
 //console.log(eqObjects(ab, ba)); // true
