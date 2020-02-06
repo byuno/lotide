@@ -21,8 +21,6 @@ const eqArrays = function (array1, array2) {
   }
 };
 
-// Returns true if both objects have identical keys with identical values.
-// Otherwise you get back a big fat false!
 const eqObjects = function (object1, object2) {
   let inputObjectKeys1 = Object.keys(object1);
   let inputObjectKeys2 = Object.keys(object2);
@@ -34,10 +32,7 @@ const eqObjects = function (object1, object2) {
   let numMatchingValues = 0;
 
   for (const keys of inputObjectKeys1) {
-    //if (object1[keys] === object2[keys]) {
-    // numMatchingValues += 1;
-  
-  //if both values are arrays
+
   console.log('Output of object1[keys]', Array.isArray(object1[keys]));
   console.log('Output of object2[keys]', Array.isArray(object2[keys]));
 
@@ -52,7 +47,7 @@ const eqObjects = function (object1, object2) {
 if (numMatchingValues === inputObjectKeys1.length) {
   return true;
 }
-//this ultimately determines the expcted value in assertEqual
+
 return false;
 };
 
