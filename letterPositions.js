@@ -50,3 +50,4 @@ const letterPositions = function (sentence) {
 
 assertArrayEqual(letterPositions("hello").e, [1]);
 
+
