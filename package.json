@@ -1,7 +1,7 @@
 {
-  "name": "lotide",
+  "name": "@byuno/lotide",
   "version": "1.0.0",
-  "description": "",
+  "description": "Lotide project: A mini clone of the [Lodash](https://lodash.com) library.",
   "main": "assertArraysEqual.js",
   "directories": {
     "test": "test"
@@ -19,7 +19,7 @@
     "url": "git+https://github.com/byuno/lotide.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "Bobby Uno",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/byuno/lotide/issues"
